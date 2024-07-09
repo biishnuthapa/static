@@ -17,3 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.querySelector(".sidebar ul li a").click();
 });
+
+
+
