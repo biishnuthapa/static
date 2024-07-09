@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Details</title>
+    <link rel="stylesheet" href="styles_meeting.css">
+</head>
+<body>
+    <div class="meeting-details">
+        <h1>MEETING DETAILS OF (MEETING TITLE)</h1>
+        <p>Organized By :- Specialist / Municipality User</p>
+        <p>June 18, 2024 &nbsp;&nbsp;|&nbsp;&nbsp; 9:30 AM - 11:30 AM</p>
+        
+        <div class="tabs">
+            <button class="tablink active" onclick="openTab(event, 'Overview')">Overview</button>
+            <button class="tablink" onclick="openTab(event, 'Objective')">Objective</button>
+            <button class="tablink" onclick="openTab(event, 'Solution')">Solution</button>
+            <button class="tablink" onclick="openTab(event, 'Link')">Link</button>
+        </div>
+        
+        <div id="Overview" class="tabcontent active">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        
+        <div id="Objective" class="tabcontent">
+            <p>The objective of this meeting is to discuss the current agricultural practices and explore potential improvements for better crop yield and sustainability.</p>
+        </div>
+        
+        <div id="Solution" class="tabcontent">
+            <p>We aim to provide a comprehensive solution that includes modern agricultural techniques, efficient resource management, and innovative technology applications to enhance productivity and reduce environmental impact.</p>
+        </div>
+        
+        <div id="Link" class="tabcontent">
+            <p>For more information and resources, please visit our <a href="https://example.com" target="_blank">official website</a>.</p>
+        </div>
+        
+        <div class="ask-specialist">
+            <h2>Want to ask our Specialist ...</h2>
+            <textarea placeholder="Type your message"></textarea>
+            <button class="send-button">SEND</button>
+        </div>
+        
+        <div class="messages">
+            <div class="message"><strong>Gyanu Khadka:</strong> Hey I want to know about the agricultural products for growing good crops.</div>
+            <div class="message"><strong>Ram Khalid:</strong> You can share some specifications of soil, especially the spoiling certificates.</div>
+            <div class="message"><strong>Gyanu Khadka:</strong> Hey I want to know about the agricultural products for growing good crops.</div>
+            <div class="message"><strong>Ram Khalid:</strong> You can share some specifications of soil, especially the spoiling certificates.</div>
+            <div class="message"><strong>Gyanu Khadka:</strong> Hey I want to know about the agricultural products for growing good crops.</div>
+        </div>
+    </div>
+
+    <script src="scripts_meeting.js"></script>
+</body>
+</html>
