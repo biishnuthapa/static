@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Management</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="sidebar">
+        <ul>
+          <li><a href="#account_details" class="active">My Account</a></li>
+          <li><a href="#additional_details">Details</a></li>
+          <li><a href="#change_password">Change Password</a></li>
+        </ul>
+      </nav>
+      <main class="content">
+        <section id="account_details" class="section section_active">
+          <h2>My Account</h2>
+          <p>Welcome to your Account <span class="username">Username</span></p>
+          <form>
+            <div class="form-group">
+              <label for="fullname">Full Name</label>
+              <input
+                type="text"
+                id="fullname"
+                placeholder="Username of the logged in User gets displayed"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Enter your phone number."
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Enter your email." />
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input
+                type="text"
+                id="address"
+                placeholder="Enter your address."
+              />
+            </div>
+            <button type="submit" class="btn">Save</button>
+          </form>
+        </section>
+        <section id="additional_details" class="section">
+          <h2>Account Details</h2>
+          <p>
+            Welcome to your Account details
+            <span class="username">Username</span>
+          </p>
+          <div class="profile-pic">
+            <img src="img/pp.png" alt="Profile Picture" />
+            <button class="btn change-pic-btn">Change Picture</button>
+          </div>
+          <form>
+            <div class="form-group">
+              <label for="province">Province</label>
+              <select id="province">
+                <option>Select your Province</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="district">District</label>
+              <select id="district">
+                <option>Select your District</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="local-level">Local Level</label>
+              <input
+                type="text"
+                id="local-level"
+                placeholder="Enter your Local level."
+              />
+            </div>
+            <div class="form-group">
+              <label for="ward">Ward</label>
+              <input type="text" id="ward" placeholder="Enter your Ward No." />
+            </div>
+            <div class="form-group">
+              <label for="tole">Tole</label>
+              <input type="text" id="tole" placeholder="Enter your tole." />
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select id="gender">
+                <option>Select your Gender</option>
+              </select>
+            </div>
+            <button type="submit" class="btn">Save</button>
+          </form>
+        </section>
+        <section id="change_password" class="section">
+          <h2>Change Password</h2>
+          <p>Change your Password <span class="username">Username</span></p>
+          <form>
+            <div class="form-group">
+              <label for="old-password">Old Password</label>
+              <input
+                type="password"
+                id="old-password"
+                placeholder="Enter your password."
+              />
+            </div>
+            <div class="form-group">
+              <label for="new-password">New Password</label>
+              <input
+                type="password"
+                id="new-password"
+                placeholder="Enter your password."
+              />
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                placeholder="Enter your password."
+              />
+            </div>
+            <button type="submit" class="btn">Save</button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
